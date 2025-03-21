@@ -7,7 +7,7 @@ import tkinter as tk
 
 def on_submit(event):
     user_input = entry.get()
-    catgirl_output = user_input + "喵~"
+    catgirl_output = user_input + "-喵~"
     label.config(text=catgirl_output)
     entry.delete(0, tk.END)
     label.bind('<Button-1>', lambda event: on_click(event, catgirl_output))
